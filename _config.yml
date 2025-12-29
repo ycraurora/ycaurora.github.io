@@ -3,14 +3,14 @@ title: ycrad
 bio: 一个搬砖工.
 
 # twitter summary info
-description: 
+description:
 
 # if it's an external image, update below for true
 # better with square images
 external-image: false
 picture: assets/images/profile.jpg
 
-# your site color theme, true for dark theme, 
+# your site color theme, true for dark theme,
 # false to light theme, auto to switch with system.
 dark-theme: false
 
@@ -114,4 +114,6 @@ exclude:
     "Gemfile.lock",
     "FAQ.md",
     "vendor",
+    ".trunk",
+    ".vscode",
   ]

@@ -60,3 +60,65 @@
 
 .lost-container
     text-align: center
+
+// 优化徽章网格布局
+.badges-grid
+    display: flex
+    flex-wrap: wrap
+    gap: 6px              // 减小间距, 更紧凑
+    align-items: center
+    margin: 10px 0 25px
+    justify-content: flex-start // 左对齐, 如果想居中改为 center
+
+    a
+        text-decoration: none // 去掉链接下划线
+        border-bottom: none
+        transition: transform 0.2s ease
+
+        &:hover
+            transform: translateY(-2px) // 鼠标悬停微微上浮效果
+
+    img
+        height: 22px      // 关键修改: 从 32px 改为 22px, 标准且精致
+        width: auto
+        border-radius: 3px
+        box-shadow: none
+        vertical-align: middle
+
+// 新增: 分支列表样式 (用于底部的写作内容)
+.branch-list
+    list-style: none
+    padding: 0
+    margin: 20px 0
+
+    li
+        margin-bottom: 12px
+        font-family: monospace // 使用等宽字体呼应 git branch 风格
+        font-size: 0.95rem
+
+        .branch-name
+            display: inline-block
+            background-color: #f1f3f5
+            color: #d63384
+            padding: 2px 8px
+            border-radius: 4px
+            margin-right: 10px
+            font-weight: bold
+
+// 优化头部介绍区域
+.profile-header
+    text-align: center
+    margin-bottom: 3rem
+
+    img
+        border-radius: 50%
+        box-shadow: 0 4px 12px rgba(0,0,0,0.1)
+        transition: transform 0.3s
+        &:hover
+            transform: rotate(5deg) scale(1.05)
+
+    blockquote
+        border-left: none
+        color: #666
+        font-style: italic
+        margin-top: 1rem
